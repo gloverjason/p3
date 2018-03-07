@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BillController@index');
+Route::get('/calculate-cost', 'BillController@calculateCost');
+
+
+
+
