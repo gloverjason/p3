@@ -8,7 +8,11 @@ class BillController extends Controller
 {
     public function index()
     {
-        return 'Show the Bill Splitter form where users can enter the information necessary to calculate the cost per person';
+        //return 'Show the Bill Splitter form where users can enter the information necessary to calculate the cost per person';
+        return view('bill.index') /*->with([
+            'results' => $results,
+            'etc' => $etc,
+        ])*/;
     }
 
     public function calculateCost()
