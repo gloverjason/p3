@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'BillController@index');
-Route::get('/calculate-cost', 'BillController@calculateCost');
+Route::get(' ', 'BillController@index');
+//Route::get('/results', 'BillController@results');
 
 
 
