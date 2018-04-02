@@ -12,7 +12,7 @@
 */
 
 Route::get(' ', 'BillController@index');
-//Route::get('/results', 'BillController@results');
+Route::get('/results', 'BillController@results');
 
 
 
