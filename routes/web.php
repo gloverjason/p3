@@ -12,6 +12,8 @@
 */
 
 Route::get(' ', 'BillController@index');
+
+// Route URI is still necessary even though redirect is returned in controller
 Route::get('/results', 'BillController@results');
 
 
