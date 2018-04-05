@@ -26,11 +26,9 @@ class BillController extends Controller
         ]);
     }
 
-
     public function results(Request $request)
-        // Request $request gets all the data from form
+    // Request $request gets all the data from form
     {
-
         // Make sure all required sections are filled out
         // Laravel automatically redirects back to index page if errors are present
         $this->validate($request, [
@@ -68,7 +66,6 @@ class BillController extends Controller
             $costPerPerson = ceil($totalCost / $splitWays * (1 + $tipPercent));
         }
 
-
         return redirect(' ')->with([
             'costPerPerson' => $costPerPerson,
             'splitWays' => $splitWays,
@@ -76,6 +73,5 @@ class BillController extends Controller
             'service' => $service,
             'roundUp' => $roundUp
         ]);
-
     }
 }
